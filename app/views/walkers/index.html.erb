@@ -1,2 +1,9 @@
 <h1>Welcome to our service</h1>
-<p>Find me in app/views/walkers/index.html.erb</p>
+<p>We will take care of your dog!</p>
+<div class="walker">
+<% @walkers.each do |walker| %>
+  <h1 class="walker-name"><%= walker.name %></h1>
+  <img src="<%= walker.image_url %>" class="walker-image"></p>
+  <p class="walker-desc"><%= walker.desc %></p>
+    <p><%= link_to "Register your dog!", walker_path(walker.id) %></p>
+<% end %></div>

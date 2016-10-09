@@ -1,0 +1,10 @@
+     Prefix Verb   URI Pattern                 Controller#Action
+    walkers GET    /walkers(.:format)          walkers#index
+            POST   /walkers(.:format)          walkers#create
+ new_walker GET    /walkers/new(.:format)      walkers#new
+edit_walker GET    /walkers/:id/edit(.:format) walkers#edit
+     walker GET    /walkers/:id(.:format)      walkers#show
+            PATCH  /walkers/:id(.:format)      walkers#update
+            PUT    /walkers/:id(.:format)      walkers#update
+            DELETE /walkers/:id(.:format)      walkers#destroy
+       root GET    /                           walkers#index

@@ -1,0 +1,7 @@
+
+<h1><%= @walker.name %></h1>
+
+<p>Note: <%= @walker.desc %></p>
+<%= image_tag @walker.image_url %><br>
+<%= link_to "Update your profile!", edit_walker_path(@walker.id) %></p>
+<%= link_to "Delete your profile", walker_path( @walker.id ), method: :delete, data: { confirm: "Are you sure?" } %>

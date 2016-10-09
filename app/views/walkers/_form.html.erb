@@ -1,0 +1,12 @@
+    <%= form_for @walker do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %><br>
+    <br>
+    <%= f.label "What time do you walk?" %><br>
+    <%= f.text_area :desc %><br>
+    <br>
+    <%= f.label "Please paste your img url "%><br>
+    <%= f.text_field :image_url %><br>
+    <br>
+    <%= f.submit "Submit" %>
+<% end %>
