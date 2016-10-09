@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DogWalkerService</title>
+    <title>Dog Walker Service</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="/app/assets/stylesheets/application.css" type="text/css">
   </head>
+<header class="site-header">
+<a href="#0" class="">DWS</a>
+  <nav class="site-nav">
+    <ul><a href="#0">About us</a></ul>
+    <ul><a href="#0">Contact us</a></ul>
+  </nav>
+  <div class="account-actions">
+  <div class="account-drop-down">
+    Gear
+    <ul>
+      <li>Your account</li>
+    </ul>
+  </div>
+  <a href="#0" class="sign-out-link">Sign out</a>
+  </div>
 
+</header>
   <body>
     <%= yield %>
   </body>

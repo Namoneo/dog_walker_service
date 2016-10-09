@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+.site-header {
+  background: #A2D9CE;
+  color: white;
+  display: flex;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  color: white
+}
+
+.account-actions {
+  margin-left: auto;
+
+}
+
+.account-drop-down ul li {
+  display: none;
+}
